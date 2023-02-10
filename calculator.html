@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function action(){
+            var first_number = parseInt(document.getElementsById("numberone").value);
+            var second_number = parseInt(document.getElementsById("numbertwo").value);
+            if(document.getElementById("ops").value == "Addition"){
+                document.getElementById("result").innerHTML = first_number+second_number; 
+            }
+            if(document.getElementById("ops").value == "Subtraction"){
+                document.getElementById("result").innerHTML = first_number-second_number; 
+            }
+            if(document.getElementById("ops").value == "Multiplication"){
+                document.getElementById("result").innerHTML = first_number*second_number;
+            }
+            if(document.getElementById("ops").value == "Division"){
+                document.getElementById("result").innerHTML = first_number/second_number;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <img src="New folder/download.jfif" alt="">
+    <form action="">
+        <label for="">Input1</label>
+        <input type="text" name="" id="numberone"><br><br>
+        <label for="">Input2</label>
+        <input type="text" id="numbertwo"><br><br>
+        
+        <label for="">Select Operation</label>
+        <select  id="ops">
+            <option value="Addition">Add</option>
+            <option value="Subtraction">Subtract</option>
+            <option value="Multiplication">Multiply</option>
+            <option value="Division">Division</option>
+        </select><br><br>
+        <img src="New folder/26699893-submit-icon (1).jpg" alt="" onclick="action();" width="50" height="50">
+        <input type="button" name="" id="res" value="Reset">
+       
+    </form>
+    <p id="result"></p>
+    
+</body>
+</html>

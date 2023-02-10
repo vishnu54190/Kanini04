@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function check() {
+            java=document.getElementById("Java");
+            Python=document.getElementById("Python");
+            Cplus=document.getElementById("C++");
+            var subject="";
+            if(java.checked == true)
+                subject+="Java"
+            if(Python.checked == true)
+                subject+="Python"
+            if(Cplus.checked == true)
+                subject+="C++"
+        
+        document.getElementById("abc").innerHTML="The subjects selected are " + subject;
+        
+
+    }
+    
+   
+    
+    
+ </script>
+ 
+</head>
+<body>
+    <form action="">
+        <label for="">Select checkbox</label><br>
+        <input type="checkbox" name="c1" id="Java" >Java <br>
+        <input type="checkbox" name="c2" id="Python" >Python <br>
+        <input type="checkbox" name="c3" id="C++" >C++ <br>
+        <input type="button" value="Submit" onclick="check();">
+    </form>
+    
+ <p id="abc"></p>
+</body>
+</html>

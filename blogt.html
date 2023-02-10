@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        table,
+        table  {
+          border: 2px solid black;
+          margin-left: auto;
+          margin-right: auto;
+          font-weight: bolder;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .abc {
+            height: 80px;
+            width: 160px;
+          text-align: center;
+          vertical-align: middle;
+        }
+        
+      </style>
+      <script>
+        
+        function intro(){
+            
+            document.getElementById("intro").style.borderColor="#6ff542";
+            // setInterval(intro,2000000)
+            
+            
+
+        }
+        
+        function Edu(){
+            document.getElementById("edu").style.borderColor="#6ff542";
+        }
+        function passion(){
+            document.getElementById("passion").style.borderColor="#6ff542";
+        }
+        function persona(){
+            document.getElementById("persona").style.borderColor="#6ff542";
+        }
+        function goal(){
+            document.getElementById("goal").style.borderColor="#6ff542";
+        }
+      </script>
+</head>
+<body>
+    <table border="3">
+        <tr>
+            <td class="abc">Vishnu Prasad A</td>
+            <td height="125px" width="100px"><img  src="New folder/6364eb96-3953-47bb-8c1f-24eb6b9218ad.jfif" height="125px" width="100px"></td>
+            <td width="100px"><a href="" onclick="intro();">Intro</a><br><a href="" onclick="Edu();">Edu</a><br><a href="" onclick="passion();">Passion</a><br>
+                <a href="" onclick="persona()">Persona</a><br><a href="" onclick="goal();">My Goal</a><br></td> 
+        
+        </tr>
+        <tr>
+            <td class="abc" colspan="3" id="intro">Hello  there..!! Vishnu Prasad here. I am from Mysore. Presently, I am an intern at Kanini Software Solutions , Chennai. </td>
+        </tr>
+        <tr>
+            <td class="abc" colspan="3" id="edu">I did my schooling in Mysore. Currently I am in the 8th semester of Bachelors of Engineering in the field of Computer Science.</td>
+        </tr>
+        <tr>
+            <td class="abc" colspan="3" id="passion">I have a big passion for sports, movies and music.I can talk about it all day. I'm a foodie too, I love to eat!!</td>
+        </tr>
+        <tr>
+            <td class="abc" colspan="3" id="persona">I am shy and an introvert. I talk less , but I observe more. I am confident about myself anytime , come what may. Most of the time I am honest , humorous and a fun loving guy. </td>
+
+        </tr>
+        <tr>
+            <td class="abc" colspan="3" id="goal">My short term goal is to upskill myself and be a developer in this company. My utimate goal is just to stay happy forever...</td>
+        </tr>
+        <tfoot>
+            <td class="abc" colspan="3">Consistency is the key...It is important to score a 5 consistently rather than scoring a 10 one day and just zeroes thereafter.. </td>
+        </tfoot>
+    </table>
+</body>
+</html>
